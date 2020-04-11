@@ -95,7 +95,7 @@ class Internet:
         
         except socket.gaierror:
             print("Check your Internet connection!!")
-            sys.exit(1)
+            sys.exit(0)
         
         except ConnectionRefusedError:
             print("Connection Refused!")
